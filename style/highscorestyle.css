@@ -1,0 +1,32 @@
+*,html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #dddde2;
+}
+.scores-container{
+    width: 100%;
+    padding: 40px;
+}
+.go-home{
+    position: absolute;
+    padding: 40px;
+    bottom: 0;
+}
+.scores{
+    padding-top: 40px;
+    font-size: 2rem;
+}
+thead{
+    font-weight: bold;
+}
+tr{
+    font-size: 17px;
+    text-align: left;
+}
+td{
+    text-align: left;
+    padding-right: 20px;
+}

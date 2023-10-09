@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>fun game</title>
-</head>
-<body>
-    <table class="table"></table>
-    <script src="./script.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="load-page">
+      <span>Loading...</span>
+    </div>
+    <div class="homepage">
+      <ul class="list-items">
+        <li id="new-game"><span>New Game</span></li>
+        <li id="howTo"><span>How to play</span></li>
+        <li id="score"><a href="./highscore.html" >Scores</a></li>
+      </ul>
+    </div>
+
+    <div id="modal-one" class="modal">
+      <div class="wrapper">
+        <button onclick="closeModal('modal-one')" class="closebtn">
+          <i style="color: #000" class="fas fa-times"></i>
+        </button>
+        <div class="modal-wrapper">
+          <form>
+            <label for="">Difficulty</label>
+            <div class="form-control">
+              <label for="">Easy</label>
+              <input type="radio" value="easy" checked name="difficulty" id="" />
+              <label for="">Hard</label>
+              <input type="radio" value="hard" name="difficulty" id="" />
+            </div>
+            <div class="form-control w-100">
+              <div class="input-control">
+                <label for="">row</label>
+                <input type="number" value="2" min="2" max="8" name="row" id="" />
+              </div>
+              <div class="input-control">
+                <label for="">column</label>
+                <input type="number" value="2" min="2"  max="8"  name="column" id="" />
+              </div>
+            </div>
+            <button type="submit">Let's play!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-game">
+        <div class="metrics">
+            <div >Number of moves: <span id="number-of-moves">0</span> </div>
+            <div>Time Elapsed: <div style="display: inline-block;" id="time"><span id="hour">00</span>:<span id="minute">00</span>:<span id="seconds">00</span></div></div>
+        </div>
+        <div class="table-container">
+            <table class="table"></table>
+            <button id="end">End game</button>
+            <button id="start-again">No solution</button>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
 </html>

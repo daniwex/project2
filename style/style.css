@@ -1,0 +1,143 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background-color: #dddde2;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+    font-size: 40px;
+}
+ul li{
+    display: block;
+    cursor: pointer;
+}
+ul li:not(li:last-child){
+    margin: 20px 0;
+}
+.load-page{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+    place-content: center;
+    place-items: center;
+    background-color:#dddde2;
+    font-size: 40px;
+    display: none;
+}
+.homepage{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+td{
+    cursor: pointer;
+}
+td:hover{
+    font-size: larger;
+}
+
+/* Modal */
+.modal {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.048);
+    z-index: 2;
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .modal-wrapper {
+    height: 180px;
+    width: 300px;
+    border-radius: 1rem;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+  }
+  .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    border: none;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+/* Modal */
+
+.main-game{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    background-color: #dddde2;
+}
+.table-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);  
+  text-align: center;
+}
+.metrics{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+#end{
+    margin-top: 30px;
+}
+
+
+/* input  && form*/
+.input-control{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.input-control:first-of-type{
+    margin-bottom: 10px;
+}
+.form-control{
+    margin-bottom:20px ;
+}
+input[type="number"]{
+    width: 200px;
+}
+.w-100{
+    width: 100%;
+}
+form{
+    width: 100%;
+}
